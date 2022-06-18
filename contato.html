@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Inicio do cabeçalho -->
+<body>
+    <header>
+        <div class="caixa">
+            <h1><a href="index.html"><img src="Imagens/logo.png" alt="Logo da Barbearia Alura"></a></h1>
+            <nav>
+                <!-- <nav> representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página, ou seja, uma seção com links de navegação. -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- fim do cabeçalho -->
+
+<!-- inicio do conteúdo principal -->
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="68" rows="10" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <!-- A tag <fieldset> é usada para criar uma divisão no nosso formulário, com um ou mais <input>.-->
+                <p>Como prefere o nosso contato ?</p>
+                <label for="radio-email"><input type="radio" name="contato" value="email"
+                        id="radio-email">E-mail</label>
+
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                        id="radio-telefone">Telefone</label>
+
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                        checked>Whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+                <!-- A tag <fieldset> é usada para criar uma divisão no nosso formulário, com um ou mais <input>. -->
+                <legend>Qual horário prefere ser atendido ?</legend>
+                <!-- a tag <legend> que usamos para um título de um grupo de campos em qualquer formulário. -->
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por
+                e-mail?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <table>                   <!-- A tag table, que representa a tabela.-->
+            <thead>               <!-- A tag thead, que representa o cabeçalho da tabela.-->
+                <tr>
+                    <th colspan="2">São Paulo</th> 
+                </tr>
+                <tr>                  <!-- A tag tr, que representa a linha da tabela. -->
+                    <th>Dia</th>      <!-- A tag th, que representa a célula do cabeçalho da tabela -->
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>                  <!-- A tag tbody, que representa o corpo da tabela-->
+                <tr>
+                    <td>Segunda</td> <!-- A tag td, que representa a célula da tabela -->
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tfoot> <!-- A tag tfoot, que representa o rodapé da tabela-->
+                    <th colspan="2">Barbearia Alura</th>
+                </tfoot>
+                
+            </tbody>
+        </table>
+    </main>
+<!-- fim do conteúdo principal -->
+
+<!-- inicio do rodapé -->
+    <footer>
+        <a href="index.html"><img src="Imagens/logo-branco.png" alt="Logo da Barbearia Alura"></a>
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019
+    </footer>
+</body>
+<!-- fim do rodapé -->
+
+</html>

@@ -1,0 +1,273 @@
+/* inicio do cabeçalho */
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    header {
+        background: #bbbbbb;
+        padding: 20px 0; /*serve para alterar o espaçamento interno, entre o conteúdo e a borda */
+    }
+
+    .caixa {
+        position: relative; /* serve para mudar o posicionamento de pixel em pixel do elemento */
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    nav {
+        position: absolute; /* serve para mudar o posicionamento inicial do elemento*/
+        top: 110px;
+        right: 0px; 
+    }
+
+    nav li {
+        display: inline;
+        margin: 0 0 0 15px;
+    }
+
+    nav a {
+        text-transform: uppercase; /*deixa o texto em maiusculo */
+        color: #000000;
+        font-weight: bold; /*deixa o texto em negrito */
+        font-size: 25px;
+        text-decoration: none; /*tira a decoração do texto */  
+    }
+
+    nav a:hover { /* hover serve para mudar a cor do elemento ao passar o mouse em cima*/
+        color: #C78C19;
+        text-decoration: underline; /*faz o sublinhado aparecer ao passar o mouse em cima do elemento */
+    }
+/* fim do cabeçalho */
+
+/* inicio do conteúdo principal */
+    .produtos{
+        width: 940px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    .produtos li {
+        display: inline-block; /* serve para ordernar os elementos ao lado*/
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    }
+
+    .produtos li:hover { 
+        border-color: #C78C19;
+    }
+
+    .produtos li:active { /* active serve para mudar a cor do elemento ao clicar com o mouse no mesmo*/
+        border-color: #088C19;
+    }
+
+    .produtos li:hover h2 {
+        font-size: 32px;
+    }
+
+    .produtos h2{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .produtos-descricao{
+        font-size: 18px;
+    }
+
+    .produtos-preco {
+        font-size: 22px;
+        font-weight: bold;
+        margin: 10px 0 0;
+        margin-top: 10px;
+    }
+
+    main {
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    form {
+        margin: 40px 0;
+    }
+
+    form label, form legend {
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+
+    .input-padrao {
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 25px; 
+        width: 50%;
+    }
+
+    .checkbox {
+        margin: 20px 0;
+    }
+
+    .enviar {
+        width: 40%;
+        padding: 15px 0;
+        background: rgb(26, 173, 26);
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .enviar:hover {
+        background: darkgreen;
+        transform: scale(1.05);
+    }
+
+    table {
+        margin: 20px 40px;
+    }
+
+    thead, tfoot {
+        background: #555555;
+        color: #FFFFFF;
+        font-weight: bold;
+    }
+
+    td, th {
+        border: 1px solid #000000;
+        padding: 8px 15px ;
+    }
+/* fim do conteúdo principal */
+
+/* inicio do rodapé */
+    footer {
+        text-align: center;
+        background: url("Imagens/bg.jpg"); /* serve para colocar uma imagem no css */
+        padding: 40px 0; 
+    }
+
+    .copyright {
+        color: #FFFFFF;
+        font-size: 13px;
+        margin: 20px;
+    }
+/* fim do rodapé do rodapé */
+
+
+/* CSS da página inicial */
+.banner {
+    width: 100%;
+    height: 350px;
+}
+
+.principal {
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /* em significa o dobro do tamanho da font base */
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left; /* deixe de ocupar o espaço em que estava, para que os outros elementos possam se posicionar ao redor dele*/
+    margin: 0 20px 20px 0; /* 0 cima, 20 direita, 20 baixo, 0 esquerda*/
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888); /* Efeito degrade */
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+.itens::before { /* Colocar itens antes do conteudo*/
+    content: "✦";
+}
+
+.itens:nth-child(1) {
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+/* Designer responsivo para celular */
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav a {
+        font-size: 21px;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
